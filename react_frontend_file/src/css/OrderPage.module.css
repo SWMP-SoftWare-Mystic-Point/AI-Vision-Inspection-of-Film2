@@ -1,0 +1,144 @@
+/* src/css/OrderPage.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    height: 39%;
+}
+
+.box {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.inputBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;           
+    padding: 0 12px 0 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: text;
+    box-sizing: border-box;
+}
+
+.customerInput {
+    flex: 1;
+    height: 100%;           
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearBtn {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    padding: 0;
+}
+
+.boxTitle {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.optionsBox {
+    flex: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.optionItem {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.optionItem:not(.selectedOption):hover {
+    background-color: #f0f0f0;
+}
+
+.selectedOption {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.actions {
+    margin-top: 2%;
+    display: flex;
+    gap: 8px;
+}
+
+.primaryButton {
+    padding: 12px 24px;
+    margin-right: 10px;
+    font-size: 16px;
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.primaryButton:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.primaryButton:disabled {
+    background: #cccccc;
+    color: #666666;
+    box-shadow: none;
+}
+
+.secondaryButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #ffffff;
+    color: #374151;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.secondaryButton:hover {
+    background: #f0f9ff;
+    color: #1e3a8a;
+}

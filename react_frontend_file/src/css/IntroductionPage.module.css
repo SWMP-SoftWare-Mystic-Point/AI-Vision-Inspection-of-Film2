@@ -1,0 +1,14 @@
+.cloudBox {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.introduction_font{
+    margin : 0; 
+    color : gray;
+    font-size: 18px; 
+    font-weight: bold;
+}

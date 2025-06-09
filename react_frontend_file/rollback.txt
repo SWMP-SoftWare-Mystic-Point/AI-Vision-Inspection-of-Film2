@@ -1,0 +1,36 @@
+{/* 메인 콘텐츠 영역 */}
+      <div className={styles.contentArea}>
+        {/* 왼쪽: 이미지 선택 & 미리보기 */}
+        <div className={styles.leftPanel}>
+          <div className={styles.selectorBar}>
+            <select
+              value={selectedImage}
+              onChange={handleSelectChange}
+              className={styles.selectBox}
+            >
+              {imageList.map((img) => (
+                <option key={img.id} value={img.name}>
+                  {img.name}
+                </option>
+              ))}
+            </select>
+            <button className={styles.checkBtn} onClick={handleCheck}>
+              검사 하기
+            </button>
+          </div>
+
+          <div className={styles.imagePreview}>
+            {/* 선택된 이미지 미리보기 (파일명만 표시) */}
+            <div className={styles.previewPlaceholder}>{selectedImage}</div>
+          </div>
+        </div>
+
+        {/* 오른쪽: 검사 상세 내용 */}
+        <div className={styles.detailPanel}>
+          <div className={styles.detailTitle}>검사 상세 내용</div>
+          <div className={styles.detailContent}>
+            {/* 검사 결과 표시 영역 (예시) */}
+            결과가 여기에 표시됩니다.
+          </div>
+        </div>
+      </div>

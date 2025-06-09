@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #f8f7fc;
+}
